@@ -37,7 +37,7 @@ async function djh() {
         else if (condition.innerHTML === "haze" && window.innerWidth > 600) {
             body.style.backgroundImage = "url('haze_pc.jpg')";
             body.style.backgroundSize = "cover";
-             body.style.color = "black"
+            body.style.color = "black"
             owner.style.color = "white";
         }
         else if (condition.innerHTML === "scattered clouds" && window.innerWidth > 600) {
@@ -52,11 +52,24 @@ async function djh() {
             body.style.color = "white"
             owner.style.color = "white";
         }
-        // else if (condition.innerHTML === "haze") {
-        //     body.style.backgroundImage = "url('haze.png')";
-        //     body.style.backgroundSize = "cover";
-        //     owner.style.color = "white";
-        // }
+        else if (condition.innerHTML === "haze") {
+            body.style.backgroundImage = "url('haze_m.jpg')";
+            body.style.backgroundSize = "cover";
+            body.style.color = "white";
+            owner.style.color = "white";
+        }
+        else if (condition.innerHTML === "snow") {
+            body.style.backgroundImage = "url('snow_m.jpg')";
+            body.style.backgroundSize = "cover";
+            body.style.color = "white";
+            owner.style.color = "white";
+        }
+        else if (condition.innerHTML === "moderate rain" || condition.innerHTML === "light rain") {
+            body.style.backgroundImage = "url('rain_m.jpeg')";
+            body.style.backgroundSize = "cover";
+            body.style.color = "white";
+            owner.style.color = "white";
+        }
     } catch {
         alert("Failed To Load Data.")
     }
